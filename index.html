@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubber Flooring Dubai | Premium Gym, Outdoor & Commercial Mats</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #0f3460;
+            --accent: #e94560;
+            --light: #f8f9fa;
+            --dark: #16213e;
+            --success: #10b981;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 150px 2rem 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none"/><circle cx="50" cy="50" r="40" stroke="rgba(255,255,255,0.05)" stroke-width="2" fill="none"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 0.8s ease 0.2s backwards;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s;
+            animation: fadeInUp 0.8s ease 0.4s backwards;
+            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(233, 69, 96, 0.4);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-color: var(--accent);
+        }
+
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent), #ff6b9d);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .benefit-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .benefit-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Types Section */
+        .types-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .type-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border-left: 4px solid var(--accent);
+        }
+
+        .type-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .type-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .type-card p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Applications Section */
+        .applications {
+            background: white;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .app-item {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2.5rem 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .app-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .app-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .app-item ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .app-item li {
+            padding: 0.3rem 0;
+            opacity: 0.9;
+        }
+
+        .app-item li::before {
+            content: "✓ ";
+            color: var(--success);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            text-align: center;
+        }
+
+        .price-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            border: 3px solid var(--accent);
+        }
+
+        .price-range {
+            font-size: 3rem;
+            color: var(--accent);
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .price-details {
+            color: #666;
+            margin-top: 1rem;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+            background: var(--primary);
+            color: white;
+        }
+
+        .comparison-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .comparison-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .comparison-item:hover {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .benefits-grid,
+            .types-grid,
+            .app-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Dubai Rubber Flooring</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#types">Types</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Rubber Flooring Dubai</h1>
+            <p>The Ultimate Solution for Gyms, Outdoor Areas & Commercial Spaces</p>
+            <a href="#contact" class="cta-button">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- What Is Section -->
+    <div class="container">
+        <h2 class="section-title">What Is Rubber Flooring?</h2>
+        <p class="section-subtitle">Rubber flooring is a high-performance, slip-resistant, shock-absorbing surface made from natural rubber, recycled rubber, or synthetic rubber compounds. It is widely used in gyms, outdoor spaces, playgrounds, sports courts, villas, warehouses, commercial kitchens, hotels, and industrial facilities.</p>
+    </div>
+
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose Rubber Flooring?</h2>
+            <p class="section-subtitle">Discover the key advantages that make rubber flooring the #1 choice in UAE</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💪</div>
+                    <h3>Extreme Durability</h3>
+                    <p>Lasts 10–20 years even in high-traffic areas. Resists heavy equipment, weights, and constant foot movement.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Slip-Resistant & Safe</h3>
+                    <p>Offers excellent grip, reducing the risk of slips in gyms, spas, playgrounds, and wet outdoor areas.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Shock Absorption</h3>
+                    <p>Absorbs the impact of dropped weights and protects both the flooring and equipment.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">☀️</div>
+                    <h3>Weather-Resistant</h3>
+                    <p>Withstands UV exposure, high temperatures, humidity, and water. Perfect for Dubai's climate.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔇</div>
+                    <h3>Noise Reduction</h3>
+                    <p>Naturally absorbs sound, reducing noise in gyms, homes, offices, and commercial properties.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧹</div>
+                    <h3>Easy Maintenance</h3>
+                    <p>Requires minimal upkeep—just sweeping and occasional mopping. No special treatments needed.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">♻️</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Recycled rubber flooring is a popular sustainable choice for environmentally conscious buyers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types Section -->
+    <section class="types-section" id="types">
+        <div class="container">
+            <h2 class="section-title">Types of Rubber Flooring</h2>
+            <p class="section-subtitle">Choose the perfect rubber flooring solution for your needs</p>
+            
+            <div class="types-grid">
+                <div class="type-card">
+                    <h3>🏋️ Rubber Gym Flooring</h3>
+                    <p>Designed for home gyms, commercial gyms, CrossFit boxes, fitness centers, and yoga studios.</p>
+                    <p><strong>Available in:</strong> Tiles, Mats, and Rolls</p>
+                </div>
+
+                <div class="type-card">
+                    <h3>🌳 Outdoor Rubber Tiles</h3>
+                    <p>Made for gardens, rooftops, walkways, balconies, and playgrounds.</p>
+                    <p><strong>Features:</strong> UV-resistant and water-permeable</p>
+                </div>
+
+                <div class="type-card">
+                    <h3>🎪 Playground Rubber Mats</h3>
+                    <p>Shock-absorbent and safe for children. Ideal for schools, parks, villas, and nurseries.</p>
+                </div>
+
+                <div class="type-card">
+                    <h3>📏 Rubber Rolls</h3>
+                    <p>Used for gyms, indoor sports courts, and industrial workplaces.</p>
+                    <p><strong>Best for:</strong> Large continuous areas</p>
+                </div>
+
+                <div class="type-card">
+                    <h3>📋 Rubber Sheets</h3>
+                    <p>Perfect for kitchens, production units, warehouses, and manufacturing facilities.</p>
+                </div>
+
+                <div class="type-card">
+                    <h3>🧩 Interlocking Rubber Tiles</h3>
+                    <p>Easy DIY installation and great for temporary setups.</p>
+                    <p><strong>Installation:</strong> No glue required</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications" id="applications">
+        <div class="container">
+            <h2 class="section-title">Applications</h2>
+            <p class="section-subtitle">Versatile flooring solutions for every space</p>
+            
+            <div class="app-grid">
+                <div class="app-item">
+                    <h3>🏋️ For Gyms</h3>
+                    <ul>
+                        <li>Protects floors from weights</li>
+                        <li>Reduces noise</li>
+                        <li>Non-slip training area</li>
+                        <li>Professional appearance</li>
+                    </ul>
+                </div>
+
+                <div class="app-item">
+                    <h3>🌞 Outdoor Spaces</h3>
+                    <ul>
+                        <li>Playgrounds</li>
+                        <li>Poolsides</li>
+                        <li>Gardens & Terraces</li>
+                        <li>Outdoor seating areas</li>
+                    </ul>
+                </div>
+
+                <div class="app-item">
+                    <h3>🏢 Commercial</h3>
+                    <ul>
+                        <li>Hotels & Restaurants</li>
+                        <li>Retail shops</li>
+                        <li>SPAs & Clinics</li>
+                        <li>Schools & Sports complexes</li>
+                    </ul>
+                </div>
+
+                <div class="app-item">
+                    <h3>🏭 Industrial Sites</h3>
+                    <ul>
+                        <li>Chemical resistance</li>
+                        <li>Reduces worker fatigue</li>
+                        <li>Supports heavy machinery</li>
+                        <li>Safety compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Competitive Pricing</h2>
+            <div class="price-box">
+                <h3>Investment Range</h3>
+                <div class="price-range">AED 35 – 180</div>
+                <p>per square foot</p>
+                <div class="price-details">
+                    <p><strong>Price depends on:</strong></p>
+                    <p>✓ Thickness</p>
+                    <p>✓ Material Type</p>
+                    <p>✓ Quantity</p>
+                    <p>✓ Application (gym, outdoor, industrial)</p>
+                </div>
+                <a href="#contact" class="cta-button" style="margin-top: 2rem;">Request Custom Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Rubber Over Other Materials?</h2>
+            <p class="section-subtitle">Rubber flooring outperforms traditional flooring options</p>
+            
+            <div class="comparison-list">
+                <div class="comparison-item">
+                    <h3>✓ Long Life</h3>
+                    <p>10-20 years durability</p>
+                </div>
+                <div class="comparison-item">
+                    <h3>✓ High Safety</h3>
+                    <p>Superior slip resistance</p>
+                </div>
+                <div class="comparison-item">
+                    <h3>✓ Impact Absorption</h3>
+                    <p>Protects equipment</p>
+                </div>
+                <div class="comparison-item">
+                    <h3>✓ No Cracking</h3>
+                    <p>Unlike wood or concrete</p>
+                </div>
+                <div class="comparison-item">
+                    <h3>✓ Water Resistant</h3>
+                    <p>Perfect for wet areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get Started Today</h2>
+            <p class="section-subtitle">Contact us for premium rubber flooring solutions</p>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>✔ Gyms</h3>
+                    <p>Professional gym flooring solutions</p>
+                </div>
+                <div class="contact-card">
+                    <h3>✔ Playgrounds</h3>
+                    <p>Safe, shock-absorbent surfaces</p>
+                </div>
+                <div class="contact-card">
+                    <h3>✔ Villas</h3>
+                    <p>Home gym & outdoor flooring</p>
+                </div>
+                <div class="contact-card">
+                    <h3>✔ Commercial & Industrial</h3>
+                    <p>Heavy-duty flooring solutions</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <a href="#" class="cta-button">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dubai Rubber Flooring. Your Trusted Flooring Partner in the UAE.</p>
+        <p style="margin-top: 1rem; opacity: 0.8;">High-Quality Installation | Durable Materials | Expert Service</p>
+    </footer>
+</body>
+</html>
